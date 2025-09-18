@@ -4,7 +4,7 @@ from datetime import datetime
 # Represeta tabela no banco de dados
 class Fotografia(models.Model):
 
-    OPCOES_CATERORIA = [
+    OPCOES_CATEGORIA = [
         ("ASTROS","Astros"),
         ("MÚSICA","Música"),
         ("NATUREZA","Natureza"),
@@ -18,12 +18,12 @@ class Fotografia(models.Model):
         
     nome = models.CharField(max_length=100, null=False, blank=False)
     legenda = models.CharField(max_length=150, null=False, blank=False)
-    categoria = models.CharField(max_length=50, choices=OPCOES_CATERORIA ,default="")
+    categoria = models.CharField(max_length=50, choices=OPCOES_CATEGORIA ,default="")
     descricao = models.TextField(null=False, blank=False)
-    foto = models.CharField(max_length=100, null=False, blank=False)
+    foto = models.ImageField(upload_to="fotos/%Y/%m/", blank=True)
     publicada = models.BooleanField(default=False)
     data_fotografia = models.DateTimeField(default=datetime.now,blank=False)
 
 
     def __str__(self):
-        return f"Fotografia: {self.nome}"
+        return self.nome
