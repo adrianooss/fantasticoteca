@@ -33,7 +33,7 @@ def cadastro(request):
     form = CadastroForms()
 
     if request.method == "POST":
-        form = CadastroForms(request.POST)
+        form = CadastroForms(request.POST, request.FILES)
         
         if form.is_valid():
         

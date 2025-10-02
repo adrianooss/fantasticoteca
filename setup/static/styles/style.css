@@ -408,6 +408,12 @@ table {
     --bs-alert-border-color: #b6d4fe;
 }
 
+.alert-success {
+    --bs-alert-color: #0f5132;
+    --bs-alert-bg: #d1e7dd;
+    --bs-alert-border-color: #badbcc;
+}
+
 .alert-danger {
     --bs-alert-color:#842029;
     --bs-alert-bg:#f8d7da;
