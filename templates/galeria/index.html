@@ -9,10 +9,12 @@
                 <section class="tags">
                     <p class="tags__titulo">Busque por tags:</p>
                     <ul class="tags__lista">
-                        <li class="tags__tag">Nebulosa</li>
-                        <li class="tags__tag">Estrela</li>
-                        <li class="tags__tag">Galáxia</li>
-                        <li class="tags__tag">Planeta</li>
+                        <li class="tags__tag"><a href="{% url 'filtro' 'ANIMAIS'%}"class="btn" style="color:#c9c9c9;">Animais</a></li>
+                        <li class="tags__tag"><a href="{% url 'filtro' 'PESSOAS'%}"class="btn" style="color:#c9c9c9;">Pessoas</a></li>
+                        <li class="tags__tag"><a href="{% url 'filtro' 'MÚSICA'%}"class="btn" style="color:#c9c9c9;">Música</a></li>
+                        <li class="tags__tag"><a href="{% url 'filtro' 'NATUREZA'%}"class="btn" style="color:#c9c9c9;">Natureza</a></li>
+                        <li class="tags__tag"><a href="{% url 'filtro' 'ASTROS'%}"class="btn" style="color:#c9c9c9;">Astros</a></li>
+                        <li class="tags__tag"><a href="{% url 'filtro' 'TECNOLOGIA'%}"class="btn" style="color:#c9c9c9;">Tecnologia</a></li>
                     </ul>
                 </section>
                 <section class="galeria">
