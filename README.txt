@@ -28,7 +28,7 @@ Fantasticoteca/
 │   ├── tests.py
 │   ├── urls.py
 │   └── views.py
-├── Fantasticoteca/    # Configurações do projeto Django
+├── setup/    # Configurações do projeto Django
 │   ├── __init__.py
 │   ├── asgi.py
 │   ├── settings.py
